@@ -1,5 +1,14 @@
-# microscope_guide
+# راهنمای میکروسکوپ
 
-## فهرست مقالات
+مجموعه مقالات آموزشی درباره میکروسکوپ به زبان ساده، به‌همراه راهنمای خرید و انتخاب.
 
-- [میکروسکوپ چطور کار می‌کند؟](https://kharideali.github.io/microscope_guide/)
+## 📚 فهرست مقالات
+
+| عنوان | آدرس |
+|---|---|
+| میکروسکوپ چیست؟ | [مشاهده صفحه](https://kharideali.github.io/microscope_guide/) |
+| انواع میکروسکوپ | [مشاهده صفحه](https://kharideali.github.io/microscope_guide/types-of-microscopes.html) |
+
+## 🖼️ تصاویر
+
+- `MicroscopeMagic.webp` — تصویر هدر صفحه اصلی
