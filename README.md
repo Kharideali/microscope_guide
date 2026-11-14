@@ -4,11 +4,30 @@
 
 ## 📚 فهرست مقالات
 
-| عنوان | آدرس |
-|---|---|
-| میکروسکوپ چیست؟ | [مشاهده صفحه](https://kharideali.github.io/microscope_guide/) |
-| انواع میکروسکوپ | [مشاهده صفحه](https://kharideali.github.io/microscope_guide/types-of-microscopes.html) |
+| عنوان | فایل | آدرس |
+|---|---|---|
+| میکروسکوپ چیست؟ | `index.html` | [مشاهده صفحه](https://kharideali.github.io/microscope_guide/) |
+| انواع میکروسکوپ | `types-of-microscopes.html` | [مشاهده صفحه](https://kharideali.github.io/microscope_guide/types-of-microscopes.html) |
+| بزرگ‌نمایی میکروسکوپ | `microscope-magnification.html` | [مشاهده صفحه](https://kharideali.github.io/microscope_guide/microscope-magnification.html) |
+
+ترتیب مطالعه: میکروسکوپ چیست؟ ← انواع میکروسکوپ ← بزرگ‌نمایی میکروسکوپ. هر صفحه به صفحه‌ی قبلی و بعدی لینک دارد.
 
 ## 🖼️ تصاویر
 
 - `MicroscopeMagic.webp` — تصویر هدر صفحه اصلی
+- `magnification.webp` — تصویر هدر صفحه بزرگ‌نمایی میکروسکوپ
+
+## ✏️ افزودن یا ویرایش صفحه
+
+1. مخزن را باز کن.
+2. برای صفحه‌ی جدید: **Add file** و بعد **Upload files**، فایل را بکش و **Commit changes** را بزن.
+3. برای ویرایش: روی فایل کلیک کن، آیکون مداد را بزن، تغییر را بده و **Commit changes** را بزن.
+4. یکی دو دقیقه صبر کن و صفحه را با `Ctrl+F5` رفرش کن.
+
+## ⚠️ نکته‌ها
+
+- اسم فایل‌ها را عوض نکن، چون لینک‌های بین صفحه‌ها به همین اسم‌ها وابسته‌اند.
+- اسم عکس‌ها به حروف بزرگ و کوچک حساس است. `MicroscopeMagic.webp` با `microscopemagic.webp` فرق دارد.
+- فایل جدید با اسم تکراری، فایل قبلی را جایگزین می‌کند (نسخه‌ی قبلی در History می‌ماند).
+- لینک فروشگاه در صفحه‌ها `https://kharideali.ir/` است.
+- هنگام افزودن مقاله‌ی جدید، چیپ مربوط به آن را در بخش «پیشنهاد مطالعه»ی صفحه‌های دیگر به لینک تبدیل کن.
