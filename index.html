@@ -40,38 +40,33 @@
 .study-links .club-link{background:linear-gradient(135deg,#fef3c7,#ffedd5);color:#92400e}
 .study-links .next-link.single-next{margin-inline-start:auto}
 @media(max-width:560px){.study-links{margin:34px 12px 26px;padding:17px 12px;border-radius:21px}.study-links a{font-size:.78rem;padding:9px 12px;min-height:43px}.study-links .article-row{gap:8px}.study-links .article-row a{max-width:48%;text-align:center}}
+
+/* مسیر راهنما و بازگشت به باشگاه دانش */
+.club-nav{max-width:1152px;margin:16px auto 22px;padding:14px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.back-club{display:inline-flex;align-items:center;gap:8px;padding:9px 17px;border-radius:999px;background:linear-gradient(135deg,#4f46e5,#0d9488);color:#fff!important;text-decoration:none;font-size:.9rem;font-weight:800;box-shadow:0 5px 14px rgba(79,70,229,.2);transition:transform .2s ease,box-shadow .2s ease}
+.back-club:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(79,70,229,.25)}
+.breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:9px;color:#64748b;font-size:.88rem;line-height:1.9}
+.breadcrumbs a{color:#4f46e5;text-decoration:none;font-weight:700}
+.breadcrumbs a:hover{text-decoration:underline}
+@media(max-width:640px){.club-nav{margin:10px 12px 18px;padding:10px 4px}.breadcrumbs{font-size:.8rem;gap:6px}}
+
 </style>
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased [font-family:Vazirmatn,Inter,sans-serif]">
 
-  <!-- ===== هدر چسبان ===== -->
-  <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur">
-    <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-
-      <!-- لوگو -->
-      <a href="#top" class="flex items-center gap-2.5">
-        <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-bl from-indigo-600 to-teal-500 text-white shadow-md">
-          <img src="https://unpkg.com/lucide-static@1.44.0/icons/microscope.svg" alt="" class="h-5 w-5">
-        </span>
-        <span class="text-base font-extrabold text-slate-900 sm:text-lg">راهنمای میکروسکوپ</span>
-      </a>
-
-      <!-- منوی اصلی (دسکتاپ) -->
-      <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-600 md:flex">
-        <a href="#article-simple" class="transition hover:text-indigo-600">مقاله ساده</a>
-        <a href="#article-detailed" class="transition hover:text-indigo-600">مقاله مفصل</a>
-        <a href="#parts" class="transition hover:text-indigo-600">اجزا</a>
-        <a href="#buying-guide" class="transition hover:text-indigo-600">راهنمای خرید</a>
-        <a href="#faq" class="transition hover:text-indigo-600">پرسش‌ها</a>
-      </nav>
-
-      <!-- دکمه راهنمای خرید -->
-      <a href="#buying-guide" class="hidden rounded-full bg-indigo-600 px-5 py-2 text-sm font-bold text-white shadow-md transition hover:bg-indigo-700 sm:inline-block">
-        راهنمای خرید
-      </a>
+  <!-- مسیر راهنما و بازگشت به باشگاه دانش -->
+  <div class="club-nav" aria-label="مسیر راهنما">
+    <a class="back-club" href="https://kharideali.github.io/danesh-club/">← بازگشت به باشگاه دانش</a>
+    <div class="breadcrumbs">
+      <a href="https://kharideali.github.io/danesh-club/">خانه</a>
+      <span aria-hidden="true">←</span>
+      <a href="https://kharideali.github.io/danesh-club/categories/tools/">ابزارهای علمی</a>
+      <span aria-hidden="true">←</span>
+      <a href="https://kharideali.github.io/danesh-club/guides/microscope/">دنیای میکروسکوپ</a>
     </div>
-  </header>
+  </div>
+
 
   <!-- ===== بخش قهرمان (Hero) ===== -->
   <section class="relative overflow-hidden bg-gradient-to-bl from-indigo-800 via-indigo-600 to-teal-500 text-white">
