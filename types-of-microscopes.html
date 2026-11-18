@@ -26,6 +26,21 @@
 
   <!-- Tailwind CSS v4 -->
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+<style>
+/* ناوبری پایانی هماهنگ مقالات میکروسکوپ */
+.study-links{max-width:900px;margin:48px auto 36px;padding:22px 18px;border:1px solid rgba(125,211,252,.48);border-radius:26px;background:linear-gradient(145deg,rgba(240,253,250,.82),rgba(239,246,255,.88),rgba(250,245,255,.82));box-shadow:0 14px 34px rgba(30,64,100,.09);backdrop-filter:blur(12px);}
+.study-links .world-row,.study-links .club-row{display:flex;justify-content:center}
+.study-links .article-row{display:flex;direction:rtl;justify-content:space-between;align-items:center;gap:12px;margin:14px 0}
+.study-links a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 19px;border:1px solid rgba(255,255,255,.8);border-radius:16px;text-decoration:none;font-size:.9rem;font-weight:800;box-shadow:0 5px 14px rgba(15,23,42,.09);transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;backdrop-filter:blur(8px)}
+.study-links a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(15,23,42,.13);filter:saturate(1.08)}
+.study-links .world-link{background:linear-gradient(135deg,#cffafe,#dbeafe);color:#075985}
+.study-links .prev-link{background:linear-gradient(135deg,#d1fae5,#ccfbf1);color:#065f46}
+.study-links .next-link{background:linear-gradient(135deg,#fce7f3,#f3e8ff);color:#9d174d}
+.study-links .club-link{background:linear-gradient(135deg,#fef3c7,#ffedd5);color:#92400e}
+.study-links .next-link.single-next{margin-inline-start:auto}
+@media(max-width:560px){.study-links{margin:34px 12px 26px;padding:17px 12px;border-radius:21px}.study-links a{font-size:.78rem;padding:9px 12px;min-height:43px}.study-links .article-row{gap:8px}.study-links .article-row a{max-width:48%;text-align:center}}
+</style>
 </head>
 
 <body class="bg-slate-50 text-slate-800 antialiased [font-family:Vazirmatn,sans-serif]">
@@ -534,7 +549,7 @@
         </p>
       </div>
     </section>
-  </main>
+  \n  <!-- ناوبری پایانی سه‌ردیفه -->\n  <nav class="study-links" aria-label="ناوبری مقالات میکروسکوپ">\n    <div class="world-row"><a class="world-link" href="https://kharideali.github.io/danesh-club/guides/microscope/">🔬 بازگشت به دنیای میکروسکوپ</a></div>\n    <div class="article-row">\n      <a class="prev-link" href="index.html">→ مقاله قبلی: میکروسکوپ چیست؟</a>\n      <a class="next-link " href="microscope-magnification.html">مقاله بعدی: بزرگ‌نمایی میکروسکوپ ←</a>\n    </div>\n    <div class="club-row"><a class="club-link" href="https://kharideali.github.io/danesh-club/">⌂ بازگشت به باشگاه دانش</a></div>\n  </nav>\n</main>
 
   <!-- ===== فوتر ===== -->
   <footer class="border-t border-slate-200 bg-white">
