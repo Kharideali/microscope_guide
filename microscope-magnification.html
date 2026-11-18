@@ -11,11 +11,14 @@
 <meta property="og:description" content="بزرگ‌نمایی میکروسکوپ را چطور محاسبه کنیم؟ تفاوت بزرگ‌نمایی و وضوح و نکات خرید.">
 <meta property="og:locale" content="fa_IR">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%234f46e5'/%3E%3Cg transform='translate(4.8 4.8) scale(.6)' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 18h8'/%3E%3Cpath d='M3 22h18'/%3E%3Cpath d='M14 22a7 7 0 1 0 0-14h-1'/%3E%3Cpath d='M9 14h2'/%3E%3Cpath d='M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z'/%3E%3Cpath d='M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3'/%3E%3C/g%3E%3C/svg%3E">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800;900&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#f8fafc;color:#1e293b;font:16px/2 Vazirmatn,Tahoma,sans-serif}
+body{margin:0;background:#f8fafc;color:#1e293b;font:16px/2 Vazirmatn,Inter,sans-serif}
 .w{max-width:1152px;margin:0 auto;padding:0 18px}
 .a{max-width:760px;margin:0 auto}
 header{position:sticky;top:0;z-index:9;background:rgba(255,255,255,.88);backdrop-filter:blur(8px);border-bottom:1px solid #e2e8f0}
@@ -32,14 +35,14 @@ nav a{text-decoration:none}nav a:hover{color:#4f46e5}
 .hero{background:linear-gradient(135deg,#3730a3,#4f46e5 55%,#14b8a6);color:#fff}
 .hero .w{display:grid;gap:36px;padding-top:56px;padding-bottom:56px;align-items:center}
 @media(min-width:900px){.hero .w{grid-template-columns:1fr 1fr;padding-top:80px;padding-bottom:80px}}
-h1{font-size:2rem;line-height:1.6;margin:14px 0;font-weight:900}
+h1{font-size:2rem;line-height:1.35;margin:14px 0;font-weight:900}@media(min-width:640px){h1{font-size:2.5rem}}@media(min-width:1024px){h1{font-size:3rem}}
 .hero p{color:#e0e7ff}
 .tag{display:inline-block;font-size:.75rem;font-weight:800;padding:0 14px;border-radius:99px;background:rgba(255,255,255,.18)}
 .pic{position:relative;height:300px;border-radius:24px;overflow:hidden;background:rgba(255,255,255,.15);display:grid;place-items:center;font-size:5rem;box-shadow:0 20px 40px rgba(0,0,0,.25)}
 .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-section{padding:56px 0;scroll-margin-top:70px}
+section{scroll-margin-top:70px}
 @media(min-width:1024px){section{padding:80px 0}}
-h2{font-size:1.6rem;line-height:1.7;margin:10px 0;font-weight:900;color:#0f172a}
+h2{font-size:1.5rem;line-height:1.7;margin:10px 0;font-weight:900;color:#0f172a}@media(min-width:640px){h2{font-size:1.875rem}}
 h3{font-size:1.2rem;margin:2rem 0 .3rem;font-weight:800;color:#0f172a;scroll-margin-top:80px}
 p{margin:.5rem 0;color:#475569}
 .pill{display:inline-block;font-size:.75rem;font-weight:800;padding:0 14px;border-radius:99px;background:#ccfbf1;color:#115e59}
@@ -107,7 +110,7 @@ footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 @media(max-width:560px){.study-links{margin:34px 12px 26px;padding:17px 12px;border-radius:21px}.study-links a{font-size:.78rem;padding:9px 12px;min-height:43px}.study-links .article-row{gap:8px}.study-links .article-row a{max-width:48%;text-align:center}}
 </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 antialiased [font-family:Vazirmatn,Inter,sans-serif]">
 
   <!-- مسیر راهنما و بازگشت به باشگاه دانش -->
   <div class="club-nav" aria-label="مسیر راهنما">
@@ -121,22 +124,43 @@ footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     </div>
   </div>
 
-<div class="hero">
-<div class="w">
-<div>
-<span class="tag">بخش سوم از مجموعه راهنما</span>
-<h1>بزرگ‌نمایی میکروسکوپ چیست و چطور محاسبه می‌شود؟</h1>
-<p>اولین چیزی که روی جعبه‌ی میکروسکوپ می‌بینید، یک عدد بزرگ مثل «۲۰۰۰×» است. آیا این عدد واقعاً یعنی دستگاه بهتر؟ در این مقاله با زبان ساده و دقیق یاد می‌گیرید بزرگ‌نمایی چیست و چطور محاسبه می‌شود.</p>
-<p style="margin-top:22px"><a class="btn wh" href="#simple">خواندن مقاله ساده</a> &nbsp;<a class="btn ol" href="#table">جدول محاسبه</a></p>
-</div>
-<div class="pic">🔬<img src="magnification.webp" alt="بزرگ‌نمایی میکروسکوپ" width="640" height="640" onerror="this.style.display='none'"></div>
-</div>
-</div>
+<!-- ===== بخش قهرمان (Hero)؛ هم‌ساختار با مقاله «میکروسکوپ چیست؟» ===== -->
+<section class="relative overflow-hidden bg-gradient-to-bl from-indigo-800 via-indigo-600 to-teal-500 text-white">
+  <div class="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-teal-300/30 blur-3xl"></div>
+  <div class="pointer-events-none absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-indigo-300/30 blur-3xl"></div>
+  <div class="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-2 lg:py-20 lg:px-8">
+    <div>
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-xs font-bold text-teal-100 ring-1 ring-white/25">
+        <img src="https://unpkg.com/lucide-static@1.44.0/icons/graduation-cap.svg" alt="" class="h-4 w-4">
+        بخش سوم از مجموعه راهنمای میکروسکوپ
+      </span>
+      <h1 class="mt-5 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">بزرگ‌نمایی میکروسکوپ چیست و چطور محاسبه می‌شود؟</h1>
+      <p class="mt-5 max-w-xl text-base leading-8 text-indigo-100 sm:text-lg">اولین چیزی که روی جعبه‌ی میکروسکوپ می‌بینید، یک عدد بزرگ مثل «۲۰۰۰×» است. آیا این عدد واقعاً یعنی دستگاه بهتر؟ در این مقاله با زبان ساده و دقیق یاد می‌گیرید بزرگ‌نمایی چیست و چطور محاسبه می‌شود.</p>
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="#article-simple" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-extrabold text-indigo-700 shadow-lg transition hover:bg-indigo-50">
+          <img src="https://unpkg.com/lucide-static@1.44.0/icons/book-open.svg" alt="" class="h-4 w-4">خواندن مقاله ساده
+        </a>
+        <a href="#article-detailed" class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-bold text-white backdrop-blur transition hover:bg-white/20">
+          <img src="https://unpkg.com/lucide-static@1.44.0/icons/file-text.svg" alt="" class="h-4 w-4">مقاله مفصل آموزشی
+        </a>
+      </div>
+    </div>
+    <div class="relative mx-auto w-full max-w-md">
+      <img src="magnification.webp" alt="بزرگ‌نمایی میکروسکوپ" class="h-64 w-full rounded-3xl object-cover shadow-2xl ring-1 ring-white/30 sm:h-80" onerror="this.style.display='none'">
+      <div class="absolute -bottom-5 right-4 flex items-center gap-3 rounded-2xl bg-white px-5 py-3.5 text-slate-800 shadow-xl sm:right-8">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-teal-100 text-teal-700">
+          <img src="https://unpkg.com/lucide-static@1.44.0/icons/zoom-in.svg" alt="" class="h-5 w-5">
+        </span>
+        <div><p class="text-sm font-extrabold">بزرگ‌نمایی مفید</p><p class="text-xs text-slate-500">فقط عدد بزرگ‌تر مهم نیست</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<main id="top" class="w">
+<main id="top" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 
-<section id="simple"><div class="a">
-<span class="pill">به زبان خیلی ساده</span>
+<section id="article-simple" class="py-14 lg:py-20"><div class="mx-auto max-w-3xl">
+<span class="inline-flex items-center gap-2 rounded-full bg-teal-100 px-4 py-1.5 text-xs font-extrabold text-teal-800"><img src="https://unpkg.com/lucide-static@1.44.0/icons/lightbulb.svg" alt="" class="h-4 w-4">به زبان خیلی ساده</span>
 <h2>بزرگ‌نمایی چیست؟</h2>
 <p>وقتی می‌گوییم میکروسکوپ «۱۰۰ برابر» بزرگ می‌کند، یعنی چیزی را که با چشم می‌بینید، ۱۰۰ بار بزرگ‌تر نشان می‌دهد. بزرگ‌نمایی فقط یک عدد است که می‌گوید تصویر چند برابر اندازه‌ی واقعی دیده می‌شود.</p>
 
@@ -158,8 +182,8 @@ footer .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 
 </div></section>
 
-<section id="detailed" style="border-top:1px solid #e2e8f0"><div class="a">
-<span class="pill i">مقاله مفصل آموزشی</span>
+<div class="h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>\n<section id="article-detailed" class="py-14 lg:py-20"><div class="mx-auto max-w-3xl">
+<span class="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-4 py-1.5 text-xs font-extrabold text-indigo-800"><img src="https://unpkg.com/lucide-static@1.44.0/icons/file-text.svg" alt="" class="h-4 w-4">مقاله مفصل آموزشی</span>
 <h2>بزرگ‌نمایی میکروسکوپ چیست؟ نحوه محاسبه، بزرگ‌نمایی مناسب و اشتباهات رایج خرید</h2>
 <p>اولین چیزی که روی جعبه‌ی میکروسکوپ می‌بینید، احتمالاً یک عدد بزرگ مثل «۱۲۰۰×» یا «۲۰۰۰×» است. سؤال اصلی این است: این عدد واقعاً چه چیزی را نشان می‌دهد و آیا بزرگ‌تر بودنش به معنای بهتر بودن دستگاه است؟ این مقاله به همین سؤال پاسخ می‌دهد.</p>
 
